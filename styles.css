@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    background-color: #F8F9FA;
+    color: #343A40;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #043467;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  .header-button {
+    background-color: #6C757D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-button:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #6C757D;
+    color: white;
+    padding: 2rem;
+  }
+  
+  .content-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #footer_heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  section#links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  section#links a {
+    transition: transform 0.2s ease;
+  }
+  
+  section#links a:hover {
+    transform: scale(1.1);
+  }
+  
+  section#links img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Main Content */
+.main-content {
+    background-color: #F4F4F4;
+    color: #333333;
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    color: #007BFF;
+  }
+  
+  /* Links */
+  a {
+    color: #FFA500;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #FFA500;
+    color: #FFFFFF;
+  }
+  
+  /* Borders */
+  hr {
+    border-color: #CCCCCC;
+  }
+  
+  
