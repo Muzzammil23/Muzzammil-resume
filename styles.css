@@ -1,95 +1,118 @@
-/* General Styles */
-body {
-    background-color: #F8F9FA;
-    color: #343A40;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Header Styles */
-  header {
-    background-color: #043467;
-    color: white;
-    text-align: center;
-    padding: 1em;
-  }
-  
-  .header-button {
-    background-color: #6C757D;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .header-button:hover {
-    background-color: #5a6268;
-  }
-  
-  /* Footer Styles */
-  footer {
-    background-color: #6C757D;
-    color: white;
-    padding: 2rem;
-  }
-  
-  .content-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #footer_heading {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  section#links {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  section#links a {
-    transition: transform 0.2s ease;
-  }
-  
-  section#links a:hover {
-    transform: scale(1.1);
-  }
-  
-  section#links img {
-    width: 40px;
-    height: 40px;
-  }
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* Main Content */
-.main-content {
-    background-color: #F4F4F4;
-    color: #333333;
-  }
-  
-  /* Headings */
-  h1, h2, h3 {
-    color: #007BFF;
-  }
-  
-  /* Links */
-  a {
-    color: #FFA500;
-  }
-  
-  /* Buttons */
-  button {
-    background-color: #FFA500;
-    color: #FFFFFF;
-  }
-  
-  /* Borders */
-  hr {
-    border-color: #CCCCCC;
-  }
-  
-  
+body {
+  font-family: 'Open Sans', sans-serif; 
+  background-color: #FAFAFA; 
+  color: #333; 
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto', sans-serif; 
+  margin-bottom: 24px;
+  color: #2C3E50; /* Deep blue color for headings */
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(45deg, #2C3E50, #34495E);
+  padding: 40px 0;
+}
+
+header h1, header p, header a {
+  color: #EAEAEA;
+}
+
+header a.btn {
+  margin-top: 20px;
+}
+
+/* Section Spacing */
+section {
+  margin: 40px 0;
+  padding: 20px 0;
+}
+
+/* Cards */
+.card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 8px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #2C3E50;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+
+/* Buttons */
+.btn {
+  border-radius: 25px;
+  background-color: #E74C3C;
+  color: #FFF;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #C0392B;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2C3E50;
+  padding: 20px 0;
+  color: #EAEAEA;
+  text-align: center; /* Center the content */
+}
+
+#footer_heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#links {
+  display: inline-block; /* Make the container inline to center it using text-align */
+}
+
+#links img {
+  margin: 0 10px;
+  transition: opacity 0.2s ease;
+  vertical-align: middle; /* Aligns the icons vertically */
+}
+
+#links img:hover {
+  opacity: 0.8;
+}
